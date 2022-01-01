@@ -2,11 +2,13 @@ import { Box, Typography } from '@mui/material';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth/useAuth';
+import Footer from '../Footer/Footer';
 import './HomePagePoperty.css'
 
 const HomePagePoperty = () => {
     const {user}=useAuth()
     return (
+        <div>
         <div className='homePagebody'>
             <div className='servicesCard'>
              <div className='left'>
@@ -42,6 +44,8 @@ const HomePagePoperty = () => {
              </NavLink>
             }
             
+        </div>
+        <Footer></Footer>
         </div>
     );
 };

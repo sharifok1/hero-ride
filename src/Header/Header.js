@@ -18,9 +18,9 @@ import './Header.css'
 
 const pages = [
         <NavLink to ="/Home" style={{
-          textDecoration:'none', color:'#fff'}}>Home</NavLink>,
+          textDecoration:'none', color:'#000'}}>Home</NavLink>,
         <NavLink to ="/Course" style={{
-          textDecoration:'none', color:'#fff'}}>Learn Driving</NavLink>
+          textDecoration:'none', color:'#000'}}>Learn Driving</NavLink>
     ];
     
 

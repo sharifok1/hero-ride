@@ -21,7 +21,7 @@ const SignUpAsLearner = () => {
         setSuccess("Password match");
     }
     createAccount(data.email, data.password, data.name, data.photoURL, navigate, false)
-    const url='https://obscure-escarpment-46323.herokuapp.com/LearnerCollection'
+    const url='https://obscure-escarpment-46323.herokuapp.com/userCollection'
     fetch(url,{
       method:'POST',
       headers:{
@@ -52,6 +52,10 @@ const SignUpAsLearner = () => {
                 <input className='riderForm' {...register("nid")} placeholder='NID Picture Link' required />
                 <input className='riderForm' {...register("photoURL")} placeholder='Your profile Picture Link' required />
                 <div className='formOption'>
+                
+                <select className='formSelector' {...register("joinAs")}>
+                    <option value="learner">Driving Learner</option>
+                </select>
                 <select className='formSelector' {...register("carType")}>
                     <option value="bike">bike</option>
                     <option value="car">car</option>

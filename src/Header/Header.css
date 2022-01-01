@@ -11,6 +11,8 @@ color: #333;
 margin: 5px;
 }
 .loginLogOut{
+ color:#333;
+ text-decoration: none;
  padding: 3px;
  font-size: 16px;
  margin: 5px;

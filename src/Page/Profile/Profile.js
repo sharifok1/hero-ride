@@ -9,14 +9,14 @@ const Profile = () => {
     const [profile, setProfile]=useState([]);
     const {user}=useAuth()
     useEffect(()=>{
-        const url = 'https://obscure-escarpment-46323.herokuapp.com/RiderCollection'
+        const url = 'https://obscure-escarpment-46323.herokuapp.com/userCollection'
         fetch(url)
         .then(res => res.json())
         .then(data=> setProfile(data))
     },[])
     console.log(profile)
     console.log(user.email)
-    const myProfile = profile.filter(myinfo => myinfo.email ===user.email)
+    const myProfile = profile.filter(myinfo => myinfo.email===user.email)
     console.log(myProfile)
     return (
         <div>
@@ -34,7 +34,7 @@ const Profile = () => {
                 </Grid>
                 <Grid item xs={12} md={6}>
                    <div className='lessionCard'>
-                      <h1>Rider Information</h1> <hr />
+                      <h1>{myData.joinAs} Information</h1> <hr />
                       <ul className='informationList'>
                           <li>Full Name: {myData.name}</li>
                           <li>email: {myData.email}</li>

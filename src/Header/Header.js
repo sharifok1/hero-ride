@@ -56,7 +56,7 @@ const Header = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            LOGO
+            HeroRide
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -140,9 +140,13 @@ const Header = () => {
             {/* profile manager------------------------------------- */}
               <div className='setting'>
               <span>{user.displayName}</span>
-              <NavLink to = "/Profile" className='profileText'>Profile</NavLink> 
+              
               {user.displayName? 
-              <button onClick={logOut} className='loginLogOut'>LogOut</button> :
+              <div>
+                <NavLink to = "/Profile" className='profileText'>Profile</NavLink> <br />
+                <button onClick={logOut} className='loginLogOut'>LogOut</button>
+              </div>
+               :
                <NavLink to ='/Login' className='loginLogOut'>Login</NavLink> }
               </div>
               

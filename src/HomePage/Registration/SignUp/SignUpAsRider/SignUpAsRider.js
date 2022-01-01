@@ -23,7 +23,7 @@ const SignUpAsRider = () => {
     }   
     createAccount(data.email, data.password, data.name, data.photoURL, navigate, true)
 
-    const url='https://obscure-escarpment-46323.herokuapp.com/RiderCollection'
+    const url='https://obscure-escarpment-46323.herokuapp.com/userCollection'
       fetch(url,{
         method:'POST',
         headers:{
@@ -55,6 +55,9 @@ const SignUpAsRider = () => {
                 <input className='riderForm' {...register("area")} placeholder='Your Area' required />
                 <h3>Car Information</h3>
                 <div className='formOption'>
+                <select className='formSelector' {...register("joinAs")}>
+                    <option value="rider">Rider</option>
+                </select>
                 <select className='formSelector' {...register("carType")}>
                     <option value="bike">bike</option>
                     <option value="car">car</option>

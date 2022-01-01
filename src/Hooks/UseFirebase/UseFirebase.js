@@ -54,11 +54,11 @@ const useFirebase =()=>{
     }
     
     //log in email password ------------------------ 
-    const passwordLogin = (email, password, history,location )=>{
+    const passwordLogin = (email, password, history )=>{
       setIsLoading(true)
        signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
-       history.replace('/')
+       history('/')
      })
         .catch((error) => {
           setFirebaseError(error.message);

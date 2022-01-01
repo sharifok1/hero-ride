@@ -14,6 +14,7 @@ import AuthProvider from './Hooks/ContextAPI/AuthProvider/AuthProvider';
 import Course from './Page/Course/Course';
 import Profile from './Page/Profile/Profile';
 import Login from './HomePage/Login/Login';
+import Admin from './Page/Admin/Admin';
 
 
 
@@ -33,6 +34,7 @@ function App() {
       <Route path="/Login" element={<Login></Login>}></Route>
       <Route path="/Course" element={<Course></Course>}></Route>
       <Route path="/Profile" element={<Profile></Profile>}></Route>
+      <Route path="/Admin" element={<Admin></Admin>}></Route>
       
     </Routes>
   </BrowserRouter>

@@ -10,7 +10,7 @@ const Login = () => {
     const { register, handleSubmit } = useForm();
     const { passwordLogin,firebaseError,user}=useAuth();
     const onSubmit = data => {
-        passwordLogin(data.email, data.password, data.name, history)
+        passwordLogin(data.email, data.password, history)
       }
     return (
         <Box className='loginBack' sx={{ flexGrow: 1 }}>

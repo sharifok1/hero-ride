@@ -21,7 +21,7 @@ const SignUpAsLearner = () => {
         setSuccess("Password match");
     }
     createAccount(data.email, data.password, data.name, data.photoURL, navigate, false)
-    const url='http://localhost:3010/LearnerCollection'
+    const url='https://obscure-escarpment-46323.herokuapp.com/LearnerCollection'
     fetch(url,{
       method:'POST',
       headers:{

@@ -23,7 +23,7 @@ const SignUpAsRider = () => {
     }   
     createAccount(data.email, data.password, data.name, data.photoURL, navigate, true)
 
-    const url='http://localhost:3010/RiderCollection'
+    const url='https://obscure-escarpment-46323.herokuapp.com/RiderCollection'
       fetch(url,{
         method:'POST',
         headers:{

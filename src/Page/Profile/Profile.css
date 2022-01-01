@@ -1,0 +1,22 @@
+*{
+    list-style: none;
+}
+.profilePhoto{
+    width: 150px;
+    height: 150px;
+    padding: 6px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+.avater{
+    text-align: start;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+.lessionCard{
+    text-align: start;
+}
+.informationList>li{
+    font-size: 18px;
+    font-weight: 600;
+}

@@ -1,0 +1,31 @@
+.signUp-banar{
+    width: 90%;
+    height: auto;
+}
+.joinUs-btn{
+    width: 325px;
+    border: 0px;
+    font-size: 3vh;
+    margin: 10px;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+.joinUs-btn:hover{
+    background-color: coral;
+    color: cornsilk;
+}
+.signup-card{
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -100px;
+}
+.joinUs-Text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}

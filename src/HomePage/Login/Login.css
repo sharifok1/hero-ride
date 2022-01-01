@@ -1,0 +1,51 @@
+.log-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+}
+.loginBack{
+    background-image: url(https://i.ibb.co/k1yJzf1/chuttersnap-gts-Eh4g1lk-unsplash.jpg);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-filed{
+    width: 30vmax;
+    margin: 10px;
+    padding: 10px;
+}
+.login-btn{
+    
+    width: 15vmax;
+    padding: 6px;
+    margin: 10px;
+}
+.newAcc{
+    text-decoration: none;
+    background-color: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: darkcyan;
+}
+.loginPage-bottomTeaxt{
+    background-color: #555;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 80%;
+    padding: 5px;
+    color:#fff
+}
+@media only screen and (max-width:760px) {
+    .loginBack{
+        height: 100vh;
+    }
+    .log-field{
+        margin-top: -50px;
+        margin-bottom: -100px;
+        margin-bottom: 50px;
+    }
+}

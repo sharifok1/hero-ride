@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.homePagebody{
+    background-image: url(https://i.ibb.co/4NvmN0Y/bg-Large.jpg);
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+.servicesCard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 150px;
+    height: 100%;
+}
+.ride-img{
+    width: 300px;
+    height: auto;
+}
+.right{
+    margin-top: 50px;
+    margin-left: 7rem;
+}
+.services-point> li{
+    font-size: 20px;
+    color: aliceblue;
+}
+.signUp-btn{
+  margin: 50px;
+  padding: 10px;
+  width: 150px;
+  background-color: cornflowerblue;
+  border: 0px;
+  color:black;
+  font-weight: 600;
+  font-size: 20px;
+}
+@media only screen and (max-width:760px) {
+    .homePagebody{
+        background-image: url(https://i.ibb.co/ws8YFg7/home-mobile.jpg);
+        background-size: cover;
+        height: auto;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .servicesCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-top: 50px;
+    }
+    .ride-img{
+        width: 100%;
+        margin-top: 5px;
+    }
+    .right{
+        margin-top: 120px;
+        margin-left: 0px;
+    }
+}
